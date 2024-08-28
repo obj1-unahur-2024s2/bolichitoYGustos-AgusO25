@@ -5,10 +5,10 @@ object bolichito {
     var objetosVidriera = munieco
     var objetosMostrador = pelota
      
-     method objetosVidriera(unObjetosEnVidriera) {objetosVidriera = unObjetosEnVidriera}
-     method objetosMostrador(unObjetoDelMostrador) {objetosMostrador = unObjetoDelMostrador} // Setter
-     method objetosVidriera() {return objetosVidriera}
-     method objetosMostrador() {return objetosMostrador} //Adquiridor
+    method objetosVidriera(unObjetosEnVidriera) {objetosVidriera = unObjetosEnVidriera}
+    method objetosMostrador(unObjetoDelMostrador) {objetosMostrador = unObjetoDelMostrador} // Setter
+    method objetosVidriera() {return objetosVidriera}
+    method objetosMostrador() {return objetosMostrador} //Adquiridor
 
     method esBrillante(){
          {return objetosVidriera.esBrillante() && objetosMostrador.esBrillante()
