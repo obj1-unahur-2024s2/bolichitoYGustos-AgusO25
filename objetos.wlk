@@ -71,6 +71,11 @@ object remera {
     return self.color().esColorFuerte()
 
   }
+
+method esDeMaterialQueBrilla() {
+  return self.material().esBrillante()
+}
+
 }
 
 
@@ -90,6 +95,10 @@ object pelota {
     return self.color().esColorFuerte()
 
   }
+  method esDeMaterialQueBrilla() {
+    return self.material().esBrillante()
+}
+
 }
 
 object bibloteca {
@@ -108,6 +117,10 @@ object bibloteca {
    method esDeColorFuerte() {
     return self.color().esColorFuerte()
 
+  }
+
+  method esDeMaterialQueBrilla() {
+   return self.material().esBrillante()
   }
 }
 
@@ -131,6 +144,10 @@ object munieco {
    method esDeColorFuerte() {
     return self.color().esColorFuerte()
 
+  }
+
+  method esDeMaterialQueBrilla() {
+   return self.material().esBrillante()
   }
 }
 
@@ -159,14 +176,17 @@ object placa {
     return self.color().esColorFuerte()
 
   }
-  method esDeMaterialQueBrilla() {return self.material()}
+  method esDeMaterialQueBrilla() {
+   return self.material().esBrillante()
+  }
+
 }
 
 object cajita {
   var objetoAdentro = placa
 
-  method objetoAdentro() {return objetoAdentro}
-  method objetoAdentro(unObjeto) {objetoAdentro = unObjeto}
+  method objetoAdentro(unObjeto) {objetoAdentro = unObjeto} //Setter
+  method objetoAdentro() {return objetoAdentro} //Getter
   method peso() {return 400 + objetoAdentro.peso()}
   method material() {return cobre}
   method color() {return rojo}

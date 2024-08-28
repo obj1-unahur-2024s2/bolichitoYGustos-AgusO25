@@ -6,16 +6,16 @@ object bolichito {
     var objetosMostrador = pelota
      
      method objetosVidriera(unObjetosEnVidriera) {objetosVidriera = unObjetosEnVidriera}
-     method objetosMostrador(unObjetoDelMostrador) {objetosMostrador = unObjetoDelMostrador}
+     method objetosMostrador(unObjetoDelMostrador) {objetosMostrador = unObjetoDelMostrador} // Setter
      method objetosVidriera() {return objetosVidriera}
-     method objetosMostrador() {return objetosMostrador}
+     method objetosMostrador() {return objetosMostrador} //Adquiridor
 
     method esBrillante(){
          {return objetosVidriera.esBrillante() && objetosMostrador.esBrillante()
      }
     }
     method esMonoCromatico(){
-         {return objetosMostrador.color() == objetoVidriera.color()  
+         {return objetosMostrador.color() == objetosVidriera.color()  
      }
     }
 
